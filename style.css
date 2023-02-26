@@ -1,21 +1,35 @@
-@import url("@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
 /* CSS rules to specify families
 font-family: 'Lexend Deca', sans-serif;
 font-family: 'Big Shoulders Display', cursive; */
+html {
+    box-sizing: border-box;
+}
 
 body {
     background-color: hsl(0, 0%, 95%);
     display: flex;
-    height: 100vh;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-weight: bold;
 }
 
 .box {
     border-radius: 12px;
     margin: 2rem;
     width: 50rem;
+    height: fit-content;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -25,6 +39,8 @@ body {
 
 .sec {
     padding: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .sec-1 {
     background-color: hsl(31, 77%, 52%);
@@ -43,31 +59,39 @@ body {
     color: hsl(0, 0%, 95%);
     font-family: 'Big Shoulders Display', cursive; 
     font-size: 40px;
+    margin: 20px 0px;
     
 }
 
 .box p {
     color: hsla(0, 0%, 100%, 0.75);
-    font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     line-height: 1.7;
+    height: 160px;
+    margin: 0;
 }
 
 .sec form {
+    display: flex;
     width: 100px;
     background-color: hsl(0, 0%, 95%);
     padding: 10px 20px;
     border-radius: 25px;
-    margin-top: 70px;
     border: 2px solid hsl(0, 0%, 95%);
+    margin-top: 30px;
+    align-self: center;
 }
+
+.sec form:hover {
+    opacity: 0.8;
+}
+
 
 input[type=button] {
     background-color: hsl(0, 0%, 95%);
     border: 2px;
     border-radius: 25px;
     padding: 0px 10px;
-    font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     text-decoration: none;
     cursor: pointer;
@@ -84,4 +108,9 @@ input[type=button] {
 
 .sec-3 input {
     color: hsl(179, 100%, 13%);
+}
+
+.sec > div {
+    width: 50px;
+    height: 30px;
 }
